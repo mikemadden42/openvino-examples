@@ -21,5 +21,9 @@ tar -xf linux-npu-driver-*.tar.gz
 
 sudo dpkg -i *.deb
 
+wget https://github.com/oneapi-src/level-zero/releases/download/v1.28.0/level-zero_1.28.0+u24.04_amd64.deb
+
+sudo dpkg -i level-zero*.deb
+
 sudo apt --fix-broken install -y
 ```
