@@ -9,3 +9,17 @@ sudo apt install -y intel-opencl-icd libze-intel-gpu1 libze1 libtbb12
 
 sudo usermod -aG render,video $USER
 ```
+
+```bash
+mkdir -p ~/intel_npu_drivers
+
+cd ~/intel_npu_drivers
+
+wget https://github.com/intel/linux-npu-driver/releases/download/v1.28.0/linux-npu-driver-v1.28.0.20251218-20347000698-ubuntu2404.tar.gz
+
+tar -xf linux-npu-driver-*.tar.gz
+
+sudo dpkg -i *.deb
+
+sudo apt --fix-broken install -y
+```
