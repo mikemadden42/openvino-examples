@@ -1,8 +1,9 @@
-import openvino as ov
-import numpy as np
-import urllib.request
-import time
 import os
+import time
+import urllib.request
+
+import numpy as np
+import openvino as ov
 
 
 def main():
